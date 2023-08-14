@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" time="0.01" errors="0" skipped="0">
+<testsuite tests="9" failures="1" name="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" time="0.006" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+9-24"/>
@@ -60,10 +60,45 @@
   <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testSmallIncome" time="0.001"/>
   <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testZero" time="0.001"/>
   <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test1" time="0.001"/>
-  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test2" time="0"/>
-  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test2InclPerformance" time="0.003"/>
-  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test1InclPerformance" time="0.002"/>
+  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test2" time="0.001"/>
+  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test2InclPerformance" time="0"/>
+  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test1InclPerformance" time="0.001">
+    <failure message="expected:&lt;12591.4&gt; but was:&lt;12591.7&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;12591.4&gt; but was:&lt;12591.7&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:494)
+	at org.junit.Assert.assertEquals(Assert.java:592)
+	at test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest.test1InclPerformance(IncomeTaxCalculatorTest.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</failure>
+    <system-out>62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+62 [Thread-1] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/Documents/repos/Teaching_159251/taxcalculator/taxbrackets.json
+</system-out>
+  </testcase>
   <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testNegativeIncome1" time="0"/>
   <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testNegativeIncome2" time="0"/>
-  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testLargeIncome" time="0.002"/>
+  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testLargeIncome" time="0.001"/>
 </testsuite>
