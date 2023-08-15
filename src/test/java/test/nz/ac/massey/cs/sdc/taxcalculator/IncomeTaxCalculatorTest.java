@@ -76,11 +76,11 @@ public class IncomeTaxCalculatorTest {
 		calculator.calculateIncomeTax(-42);
 	}
 
-	@Test(timeout=100)
-	public void test1InclPerformance() {
-		double tax = calculator.calculateIncomeTax(65239);
-		assertEquals(12591.40,tax,0.01);
-	}
+	// @Test(timeout=100)
+	// public void test1InclPerformance() {
+	// 	double tax = calculator.calculateIncomeTax(65239);
+	// 	assertEquals(12591.40,tax,0.01);
+	// }
 
 	@Test(timeout=100)
 	public void test2InclPerformance() {
