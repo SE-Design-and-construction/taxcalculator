@@ -29,7 +29,7 @@ public class IncomeTaxCalculatorTest {
 
 	@Test
 	public void test1() {
-		double tax = calculator.calculateIncomeTax(60);
+		double tax = calculator.calculateIncomeTax(65238);
 		assertEquals(12591.40,tax,0.01);
 	}
 
