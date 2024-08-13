@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec <<< FAILURE!
-test1(test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest)  Time elapsed: 0.003 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<12591.4> but was:<6.3>
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec <<< FAILURE!
+test1(test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<125.0> but was:<12591.4>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:743)
 	at org.junit.Assert.assertEquals(Assert.java:494)
 	at org.junit.Assert.assertEquals(Assert.java:592)
-	at test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest.test1(IncomeTaxCalculatorTest.java:33)
+	at test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest.test1(IncomeTaxCalculatorTest.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
