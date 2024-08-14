@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="1" name="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" time="0.011" errors="0" skipped="0">
+<testsuite tests="8" failures="1" name="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" time="0.01" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+9-24"/>
@@ -57,10 +57,10 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testSmallIncome" time="0.001"/>
-  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testZero" time="0.001"/>
-  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test1" time="0.004">
-    <failure message="expected:&lt;125.0&gt; but was:&lt;12591.4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;125.0&gt; but was:&lt;12591.4&gt;
+  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testSmallIncome" time="0"/>
+  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testZero" time="0"/>
+  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test1" time="0.003">
+    <failure message="expected:&lt;12.4&gt; but was:&lt;12591.4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;12.4&gt; but was:&lt;12591.4&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:743)
 	at org.junit.Assert.assertEquals(Assert.java:494)
@@ -98,25 +98,25 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
-34 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+    <system-out>41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
+41 [main] INFO nz.ac.massey.cs.sdc.taxcalculator.MasterDataReader  - importing tax brackets from /Users/atahir/git-example/taxcalculator/taxbrackets.json
 </system-out>
   </testcase>
   <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test2" time="0.001"/>
-  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test2InclPerformance" time="0.002"/>
+  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="test2InclPerformance" time="0.003"/>
   <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testNegativeIncome1" time="0"/>
   <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testNegativeIncome2" time="0"/>
-  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testLargeIncome" time="0.002"/>
+  <testcase classname="test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest" name="testLargeIncome" time="0.003"/>
 </testsuite>

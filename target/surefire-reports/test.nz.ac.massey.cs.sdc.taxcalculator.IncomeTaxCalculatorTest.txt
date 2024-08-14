@@ -2,8 +2,8 @@
 Test set: test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest
 -------------------------------------------------------------------------------
 Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec <<< FAILURE!
-test1(test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest)  Time elapsed: 0.004 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<125.0> but was:<12591.4>
+test1(test.nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculatorTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<12.4> but was:<12591.4>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:743)
 	at org.junit.Assert.assertEquals(Assert.java:494)
