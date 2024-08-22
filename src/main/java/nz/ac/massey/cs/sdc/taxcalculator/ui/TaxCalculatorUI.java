@@ -17,13 +17,13 @@ import nz.ac.massey.cs.sdc.taxcalculator.IncomeTaxCalculator;
  * @author Jens Dietrich
  * @version 1.2
  * @since 1.1
- */ 
+ */
 
 public class TaxCalculatorUI  extends JFrame  {
 
 	private static final long serialVersionUID = -249195317281900474L;
 	// model
-    private IncomeTaxCalculator taxCalculator = new IncomeTaxCalculator(); 
+    private IncomeTaxCalculator taxCalculator = new IncomeTaxCalculator();
     // components
     NumberFormat numberFormat = NumberFormat.getInstance(Locale.UK);
     JFormattedTextField incomeField = new JFormattedTextField(numberFormat);
@@ -32,17 +32,18 @@ public class TaxCalculatorUI  extends JFrame  {
 	JLabel taxLabel = new JLabel("Income Tax:");
 	JButton computeButton = new JButton("Compute Income Tax");
 	JButton exitButton = new JButton("Exit Application");
-	
+
 	/**
 	 * Main method - launch the UI.
 	 */
 	public static void main(String[] args) {
-		TaxCalculatorUI application = new TaxCalculatorUI();
-		application.setSize(500,125);
-		application.setLocation(400,300);
-		application.setResizable(false);
-		application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		application.setVisible(true);
+		 TaxCalculatorUI application = new TaxCalculatorUI();
+		 application.setSize(500,125);
+		 application.setLocation(400,300);
+		 application.setResizable(false);
+		 application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		 application.setVisible(true);
+
 	}
 
 
@@ -52,7 +53,7 @@ public class TaxCalculatorUI  extends JFrame  {
     public void setTaxCalculator(IncomeTaxCalculator taxCalculator) {
         this.taxCalculator = taxCalculator;
     }
-    
+
     /**
      * Constructor.
      */
@@ -66,9 +67,9 @@ public class TaxCalculatorUI  extends JFrame  {
     private void init() {
     	JPanel contentPane = new JPanel(new BorderLayout(5,5));
     	this.setContentPane(contentPane);
-    	
+
     	taxField.setEditable(false);
-    	
+
     	JPanel main = new JPanel();
     	main.setLayout(new GridLayout(2,3,5,5));
     	main.add(incomeLabel);
@@ -77,41 +78,41 @@ public class TaxCalculatorUI  extends JFrame  {
     	main.add(taxField);
     	main.setBorder(BorderFactory.createEmptyBorder(5,25,5,25));
     	contentPane.add(main,BorderLayout.CENTER);
-    	
+
     	JPanel toolbar = new JPanel(new FlowLayout(FlowLayout.CENTER));
     	toolbar.add(computeButton);
 		computeButton.setMnemonic('c');
 		toolbar.add(exitButton);
 		exitButton.setMnemonic('x');
 		contentPane.add(toolbar,BorderLayout.SOUTH);
-    	
+
     	computeButton.addActionListener(
     		new ActionListener() {
     			public void actionPerformed(ActionEvent e) {
     				computeIncomeTax();
     			}
-    		}	
+    		}
     	);
 		exitButton.addActionListener(
 			new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					dispose();
 				}
-			}	
+			}
 		);
 		this.incomeField.addKeyListener(
 			new KeyListener() {
 
 				public void keyPressed(KeyEvent e) {
-					taxField.setText("");					
+					taxField.setText("");
 				}
 				public void keyReleased(KeyEvent e) {
-					taxField.setText("");					
+					taxField.setText("");
 				}
 				public void keyTyped(KeyEvent e) {
-					taxField.setText("");					
-				}		
-			}	
+					taxField.setText("");
+				}
+			}
 		);
     }
     /**
@@ -126,7 +127,7 @@ public class TaxCalculatorUI  extends JFrame  {
 		}
 		catch (Exception x) {
 			handleException(x);
-		}			
+		}
 	}
 	/**
 	 * Handle exceptions.
@@ -138,8 +139,5 @@ public class TaxCalculatorUI  extends JFrame  {
 		this.taxField.setText("");
 	}
 
-    
- } 
 
-
-
+ }

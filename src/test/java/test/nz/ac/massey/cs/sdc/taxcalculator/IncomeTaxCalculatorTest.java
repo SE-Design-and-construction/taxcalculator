@@ -8,12 +8,6 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-/**
- * Tests cases for the income tax calculator based on the examples on the IRD web site:
- * http://www.ird.govt.nz/how-to/taxrates-codes/itaxsalaryandwage-incometaxrates.html
- * accessed on 9 August 12.
- * @author jens dietrich
- */
 public class IncomeTaxCalculatorTest {
 
 	private IncomeTaxCalculator calculator = null;
@@ -30,14 +24,14 @@ public class IncomeTaxCalculatorTest {
 	@Test
 	public void test1() {
 		double tax = calculator.calculateIncomeTax(65238);
-		assertEquals(12591.40,tax,0.01);
+		assertEquals(11791.9,tax,0.01);
 
 	}
 
 	@Test
 	public void test2() {
 		double tax = calculator.calculateIncomeTax(45000);
-		assertEquals(6895.0,tax,0.01);
+		assertEquals(6783.0,tax,0.01);
 	}
 
 	// boundary tests
@@ -57,7 +51,7 @@ public class IncomeTaxCalculatorTest {
 	public void testLargeIncome() {
 		double tax = calculator.calculateIncomeTax(Integer.MAX_VALUE);
 		// should be very close to the max tax rate
-		assertEquals(0.33*Integer.MAX_VALUE,tax,Integer.MAX_VALUE*0.001);
+		assertEquals(0.39*Integer.MAX_VALUE,tax,Integer.MAX_VALUE*0.001);
 	}
 
 	@Test
@@ -86,7 +80,7 @@ public class IncomeTaxCalculatorTest {
 	@Test(timeout=100)
 	public void test2InclPerformance() {
 		double tax = calculator.calculateIncomeTax(45000);
-		assertEquals(6895.0,tax,0.01);
+		assertEquals(6783.0,tax,0.01);
 	}
 
 }

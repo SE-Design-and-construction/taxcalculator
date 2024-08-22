@@ -10,10 +10,6 @@ import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Utility to read tax brackets.
- * @author jens dietrich
- */
 public class MasterDataReader {
     public static TaxBracket[] getTaxBrackets() {
         BasicConfigurator.configure();

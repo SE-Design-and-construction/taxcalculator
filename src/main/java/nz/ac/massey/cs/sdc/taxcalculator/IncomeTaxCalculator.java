@@ -1,10 +1,5 @@
 package nz.ac.massey.cs.sdc.taxcalculator;
-/**
- * A simple tax calculator implementing the NZ tax rules accourding to 
- * http://www.ird.govt.nz/how-to/taxrates-codes/itaxsalaryandwage-incometaxrates.html
- * accessed on 9 August 12
- * @author jens dietrich
- */
+
 public class IncomeTaxCalculator {
 
 	public double calculateIncomeTax(double income) {

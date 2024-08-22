@@ -1,10 +1,5 @@
 package nz.ac.massey.cs.sdc.taxcalculator;
 
-/**
- * Class representing a tax bracket.
- * @author jens dietrich
- */
-
 
 public class TaxBracket {
     private double start = 0;
