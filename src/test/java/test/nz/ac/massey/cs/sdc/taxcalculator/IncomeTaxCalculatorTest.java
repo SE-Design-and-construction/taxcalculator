@@ -36,7 +36,7 @@ public class IncomeTaxCalculatorTest {
 
 	@Test
 	public void test3() {
-		assertTrue(true);
+		assertTrue(false);
 	}
 
 	// boundary tests
