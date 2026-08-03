@@ -34,6 +34,11 @@ public class IncomeTaxCalculatorTest {
 		assertEquals(6783.0,tax,0.01);
 	}
 
+	@Test
+	public void test3() {
+		assertTrue(true);
+	}
+
 	// boundary tests
 	@Test
 	public void testZero() {
