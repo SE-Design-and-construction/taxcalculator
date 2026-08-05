@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Test my first build
 
 on:
   push:
@@ -29,5 +29,3 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean test
-
-   
